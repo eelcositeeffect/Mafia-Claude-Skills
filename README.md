@@ -35,6 +35,19 @@ Ejemplos de lo que pueden hacer las skills:
 | [**Landing Page Mastery**](./skills/landing-page-mastery/) | Sistema experto para crear y optimizar landing pages de alta conversión (SaaS, cursos, ebooks). | 🎨 Marketing |
 | [**Vercel React Best Practices**](./skills/vercel-react-best-practices/) | Guías de optimización de rendimiento para React y Next.js mantenidas por Vercel. (Skill externa sincronizada) | ⚡ Desarrollo |
 | [**Frontend Design**](./skills/frontend-design/) | Crea interfaces frontend distintivas y de grado de producción con alta calidad de diseño. (Skill de Anthropic) | 🎨 Diseño |
+| [**Agent Browser**](./skills/agent-browser/) | Automatización de navegador para interactuar con sitios web, extraer datos y testing. | 🌐 Web |
+| [**Audio Transcriber**](./skills/audio-transcriber/) | Transforma grabaciones de audio en documentación Markdown con resúmenes. *(Source: community)* | 🎙️ Audio |
+| [**Decision Toolkit**](./skills/decision-toolkit/) | Herramientas de toma de decisiones, guías paso a paso y exploración de escenarios. | 🧠 Productividad |
+| [**Deep Research**](./skills/deep-research/) | Investigación profunda sobre cualquier tema con búsquedas web y análisis exhaustivo. | 🔍 Investigación |
+| [**Fact Checker**](./skills/fact-checker/) | Verifica datos, hechos y afirmaciones para asegurar la veracidad de la información. | ✅ Verificación |
+| [**File Organizer**](./skills/file-organizer/) | Organiza archivos, elimina duplicados y sugiere mejores estructuras de carpetas. | 📁 Utilidades |
+| [**Find Skills**](./skills/find-skills/) | Descubre e instala nuevas agent skills respondiendo a las necesidades del usuario. | ⚙️ Utilidades |
+| [**Frontend Slides**](./skills/frontend-slides/) | Crea presentaciones HTML animadas o convierte archivos PowerPoint. *(Source: ECC)* | 📊 Presentaciones |
+| [**Humanizer**](./skills/humanizer/) | Transforma y humaniza el tono de los textos generados por IA para que suenen naturales. | ✍️ Redacción |
+| [**MCP Builder**](./skills/mcp-builder/) | Guía para construir servidores MCP (Model Context Protocol) en Python y TypeScript. | 🛠️ Desarrollo |
+| [**OpenRouter**](./skills/openrouter/) | Integración unificada con la API de OpenRouter para usar más de 400 modelos de IA. | 🔌 API |
+| [**Process Interviewer**](./skills/process-interviewer/) | Entrevistador experto que extrae planes concretos de la mente del usuario antes de crear. | 📝 Planificación |
+| [**Prompt Master**](./skills/prompt-master/) | Genera prompts ultra-optimizados para cualquier herramienta o modelo de IA. | 💬 Prompts |
 
 ---
 
@@ -212,6 +225,110 @@ frontend-design/
 ```
 
 ➡️ [Ver documentación completa](./skills/frontend-design/SKILL.md)
+
+---
+
+### 🌐 Agent Browser
+> **Automatización de navegador para interactuar con sitios web y extraer datos.**
+
+Interactúa con páginas web, rellena formularios, toma capturas de pantalla y realiza testing web de forma automatizada.
+➡️ [Ver documentación completa](./skills/agent-browser/SKILL.md)
+
+---
+
+### 🎙️ Audio Transcriber
+> **Transforma grabaciones en documentación Markdown profesional.** *(Source: community)*
+
+Procesa audio para generar transcripciones estructuradas y resúmenes inteligentes mediante LLMs.
+➡️ [Ver documentación completa](./skills/audio-transcriber/SKILL.md)
+
+---
+
+### 🧠 Decision Toolkit
+> **Herramientas estructuradas para la toma de decisiones.**
+
+Genera guías paso a paso, detectores de sesgos y exploradores de escenarios para analizar opciones importantes de manera sistemática.
+➡️ [Ver documentación completa](./skills/decision-toolkit/SKILL.md)
+
+---
+
+### 🔍 Deep Research
+> **Investigación exhaustiva sobre cualquier temática usando la API de Deep Research.**
+
+Automatiza la mejora de prompts de búsqueda y ejecuta análisis profundos con acceso web.
+➡️ [Ver documentación completa](./skills/deep-research/SKILL.md)
+
+---
+
+### ✅ Fact Checker
+> **Verificador de hechos y afirmaciones.**
+
+Comprueba datos e información para asegurar su veracidad y precisión antes de su publicación o uso.
+➡️ [Ver documentación completa](./skills/fact-checker/SKILL.md)
+
+---
+
+### 📁 File Organizer
+> **Organizador inteligente de archivos y directorios.**
+
+Entiende el contexto de tus archivos, encuentra duplicados y sugiere estructuras ordenadas para tu espacio de trabajo digital.
+➡️ [Ver documentación completa](./skills/file-organizer/SKILL.md)
+
+---
+
+### ⚙️ Find Skills
+> **Descubrimiento e instalación de nuevas habilidades.**
+
+Permite buscar e instalar skills dinámicamente cuando preguntas cómo hacer una tarea específica con agentes.
+➡️ [Ver documentación completa](./skills/find-skills/SKILL.md)
+
+---
+
+### 📊 Frontend Slides
+> **Creación de presentaciones HTML ricas en animaciones.** *(Source: ECC)*
+
+Construye diapositivas desde cero o convierte presentaciones de PowerPoint a web con facilidad.
+➡️ [Ver documentación completa](./skills/frontend-slides/SKILL.md)
+
+---
+
+### ✍️ Humanizer
+> **Da un toque humano a tus textos.**
+
+Ajusta y mejora el texto generado por IA para eliminar la "voz de robot" y hacerlo más cercano y natural.
+➡️ [Ver documentación completa](./skills/humanizer/SKILL.md)
+
+---
+
+### 🛠️ MCP Builder
+> **Guía para crear servidores Model Context Protocol (MCP) de alta calidad.**
+
+Ayuda en el desarrollo de herramientas MCP con Python (FastMCP) o TypeScript/Node para integrar APIs externas con LLMs.
+➡️ [Ver documentación completa](./skills/mcp-builder/SKILL.md)
+
+---
+
+### 🔌 OpenRouter
+> **Acceso unificado a modelos de IA a través de OpenRouter.**
+
+Interactúa con una enorme variedad de modelos (más de 400) integrando fácilmente la API de OpenRouter.
+➡️ [Ver documentación completa](./skills/openrouter/SKILL.md)
+
+---
+
+### 📝 Process Interviewer
+> **Entrevistador implacable para extraer y aterrizar planes.**
+
+Antes de construir, este agente te entrevista para clarificar tus ideas, eliminar ambigüedades y generar un plan de acción robusto.
+➡️ [Ver documentación completa](./skills/process-interviewer/SKILL.md)
+
+---
+
+### 💬 Prompt Master
+> **Generador de prompts optimizados para cualquier herramienta de IA.**
+
+Crea o adapta prompts perfectos para ChatGPT, Cursor, Midjourney, herramientas de vídeo y cualquier LLM o agente.
+➡️ [Ver documentación completa](./skills/prompt-master/SKILL.md)
 
 ---
 
