@@ -32,6 +32,8 @@ Never batch large changes. Never skip verification. Never hide uncertainty. Neve
 
 **Before touching any file, understand the repo state and detect pre-existing failures.**
 
+
+
 ```
 1. git status --short          # Is the repo clean?
 2. Inspect package.json         # Available scripts, dependencies
@@ -54,6 +56,42 @@ If baseline already fails:
 **Checkpoint recommendation:**
 - If the repo is clean before starting, recommend creating a checkpoint commit before implementation
 - Do NOT create commits unless explicitly asked by the user
+
+## Auto-Commit and Auto-Push
+
+Auto-commit and auto-push are enabled by default unless the user explicitly disables them.
+
+The agent should commit each verified logical unit of work and push it to the active remote working branch so the user can review the history later.
+
+Before implementation:
+- identify the current branch;
+- if on `main`, `master`, `production`, `release`, or another protected/mainline branch, create a new working branch inferred from the plan;
+- if already on a working branch, continue there;
+- never push directly to protected/mainline branches.
+
+If there are pre-existing uncommitted changes:
+- do not automatically include them in agent commits;
+- stage only files related to the current logical unit;
+- if user changes and agent changes cannot be safely separated, stop and report the conflict.
+
+Commit only after:
+- the logical unit is complete;
+- verification passes;
+- the diff has been inspected;
+- the commit has one coherent purpose.
+
+Use Conventional Commits:
+
+```text
+type(scope): concise imperative summary
+
+Examples:
+
+feat(auth): add session validation helper
+fix(api): handle empty webhook payload
+refactor(billing): extract invoice mapper
+test(auth): cover expired session flow
+```
 
 ### 1. PARSE: Extract and Reality-Check the Plan
 
