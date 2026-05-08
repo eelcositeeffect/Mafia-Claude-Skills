@@ -35,6 +35,7 @@ Ejemplos de lo que pueden hacer las skills:
 | [**Landing Page Mastery**](./skills/landing-page-mastery/) | Sistema experto para crear y optimizar landing pages de alta conversión (SaaS, cursos, ebooks). | 🎨 Marketing |
 | [**Vercel React Best Practices**](./skills/vercel-react-best-practices/) | Guías de optimización de rendimiento para React y Next.js mantenidas por Vercel. (Skill externa sincronizada) | ⚡ Desarrollo |
 | [**Frontend Design**](./skills/frontend-design/) | Crea interfaces frontend distintivas y de grado de producción con alta calidad de diseño. (Skill de Anthropic) | 🎨 Diseño |
+| [**Frontier Plan OpenCode Executor**](./skills/frontier-plan-opencode-executor/) | Ejecuta planes de implementación de IA frontera de forma segura y estructurada. *(Skill externa sincronizada)* | 🤖 Agentes |
 | [**Agent Browser**](./skills/agent-browser/) | Automatización de navegador para interactuar con sitios web, extraer datos y testing. | 🌐 Web |
 | [**Audio Transcriber**](./skills/audio-transcriber/) | Transforma grabaciones de audio en documentación Markdown con resúmenes. *(Source: community)* | 🎙️ Audio |
 | [**Decision Toolkit**](./skills/decision-toolkit/) | Herramientas de toma de decisiones, guías paso a paso y exploración de escenarios. | 🧠 Productividad |
@@ -225,6 +226,37 @@ frontend-design/
 ```
 
 ➡️ [Ver documentación completa](./skills/frontend-design/SKILL.md)
+
+---
+
+### 🤖 Frontier Plan OpenCode Executor
+
+> **Ejecuta planes de implementación de IA frontera de forma segura y estructurada en OpenCode.**
+
+Una skill externa sincronizada para validar y ejecutar paso a paso planes complejos de modelos como Claude Opus, forzando la verificación continua contra el repositorio real.
+
+**Características:**
+
+| Función | Descripción |
+|---------|-------------|
+| 🔎 Validación | Verifica la realidad del repositorio antes de ejecutar |
+| 🛡️ Seguridad | Previene comandos destructivos e instalaciones no deseadas |
+| 🔄 Ejecución Paso a Paso | Fuerza al modelo a ejecutar de a un paso y verificar |
+| 👀 Inspección de Diffs | Revisa el tamaño y alcance real de cada cambio |
+
+**Cuando usar esta skill:**
+- Al recibir un plan detallado de implementación de un modelo grande (ej. Claude Opus/GPT-5).
+- Para obligar a modelos más pequeños a ejecutar de manera disciplinada y segura.
+
+**Estructura de la skill:**
+
+```
+frontier-plan-opencode-executor/
+├── SKILL.md           # Flujo de trabajo, verificaciones e instrucciones
+└── README.md          # Documentación general de la skill
+```
+
+➡️ [Ver documentación completa](./skills/frontier-plan-opencode-executor/SKILL.md)
 
 ---
 
