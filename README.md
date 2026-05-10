@@ -1,476 +1,476 @@
 # 🎩 Mafia Claude Skills
 
-Una colección de Claude Skills en español para potenciar tus flujos de trabajo con AI.
+Een verzameling Claude Skills om je AI-workflows te verbeteren.
 
 ![Mafia Claude Skills](mafia_claude_skills.png)
 
-[![Licencia](https://img.shields.io/badge/Licencia-Apache%202.0-blue.svg)](LICENSE)
-[![Contribuciones Bienvenidas](https://img.shields.io/badge/Contribuciones-Bienvenidas-brightgreen.svg)](CONTRIBUTING.md)
+[![Licentie](https://img.shields.io/badge/Licentie-Apache%202.0-blue.svg)](LICENSE)
+[![Bijdragen Welkom](https://img.shields.io/badge/Bijdragen-Welkom-brightgreen.svg)](CONTRIBUTING.md)
 
 ---
 
-## 📖 ¿Qué son las Claude Skills?
+## 📖 Wat zijn Claude Skills?
 
-Las **Skills** son carpetas de instrucciones, scripts y recursos que Claude carga dinámicamente para mejorar su rendimiento en tareas especializadas. Una skill le enseña a Claude cómo completar tareas específicas de forma repetible y precisa.
+**Skills** zijn mappen met instructies, scripts en bronnen die Claude dynamisch laadt om zijn prestaties bij gespecialiseerde taken te verbeteren. Een skill leert Claude hoe hij specifieke taken op een herhaalbare en nauwkeurige manier kan uitvoeren.
 
-Ejemplos de lo que pueden hacer las skills:
-- 📊 Analizar datos siguiendo flujos de trabajo específicos
-- 📝 Crear documentos con guías de estilo de tu empresa
-- 🔢 Realizar cálculos precisos usando scripts de Python
-- 🤖 Automatizar tareas personalizadas
+Voorbeelden van wat skills kunnen doen:
+- 📊 Gegevens analyseren volgens specifieke workflows
+- 📝 Documenten maken met de stijlgidsen van je bedrijf
+- 🔢 Nauwkeurige berekeningen uitvoeren met Python-scripts
+- 🤖 Aangepaste taken automatiseren
 
-**Más información oficial:**
-- [¿Qué son las skills? Guía español](https://aimafia.substack.com/p/skills-ia)
-- [Documentación skills oficial Claude](https://support.claude.com/en/articles/12512176-what-are-skills)
-- [Usando skills en Claude](https://support.claude.com/en/articles/12512180-using-skills-in-claude)
-- [Cómo crear skills personalizadas](https://support.claude.com/en/articles/12512198-creating-custom-skills)
-
----
-
-## 📋 Índice de Skills
-
-| Skill | Descripción | Categoría |
-|-------|-------------|-----------|
-| [**Gestor Autónomos**](./skills/gestor-autonomos/) | Gestión contable y fiscal para autónomos en España. Cálculo de IVA, IRPF, procesamiento de Stripe/Substack. | 💼 Finanzas |
-| [**Landing Page Mastery**](./skills/landing-page-mastery/) | Sistema experto para crear y optimizar landing pages de alta conversión (SaaS, cursos, ebooks). | 🎨 Marketing |
-| [**Vercel React Best Practices**](./skills/vercel-react-best-practices/) | Guías de optimización de rendimiento para React y Next.js mantenidas por Vercel. (Skill externa sincronizada) | ⚡ Desarrollo |
-| [**Frontend Design**](./skills/frontend-design/) | Crea interfaces frontend distintivas y de grado de producción con alta calidad de diseño. (Skill de Anthropic) | 🎨 Diseño |
-| [**Frontier Plan OpenCode Executor**](./skills/frontier-plan-opencode-executor/) | Ejecuta planes de implementación de IA frontera de forma segura y estructurada. *(Skill externa sincronizada)* | 🤖 Agentes |
-| [**Agent Browser**](./skills/agent-browser/) | Automatización de navegador para interactuar con sitios web, extraer datos y testing. | 🌐 Web |
-| [**Audio Transcriber**](./skills/audio-transcriber/) | Transforma grabaciones de audio en documentación Markdown con resúmenes. *(Source: community)* | 🎙️ Audio |
-| [**Decision Toolkit**](./skills/decision-toolkit/) | Herramientas de toma de decisiones, guías paso a paso y exploración de escenarios. | 🧠 Productividad |
-| [**Deep Research**](./skills/deep-research/) | Investigación profunda sobre cualquier tema con búsquedas web y análisis exhaustivo. | 🔍 Investigación |
-| [**Fact Checker**](./skills/fact-checker/) | Verifica datos, hechos y afirmaciones para asegurar la veracidad de la información. | ✅ Verificación |
-| [**File Organizer**](./skills/file-organizer/) | Organiza archivos, elimina duplicados y sugiere mejores estructuras de carpetas. | 📁 Utilidades |
-| [**Find Skills**](./skills/find-skills/) | Descubre e instala nuevas agent skills respondiendo a las necesidades del usuario. | ⚙️ Utilidades |
-| [**Frontend Slides**](./skills/frontend-slides/) | Crea presentaciones HTML animadas o convierte archivos PowerPoint. *(Source: ECC)* | 📊 Presentaciones |
-| [**Humanizer**](./skills/humanizer/) | Transforma y humaniza el tono de los textos generados por IA para que suenen naturales. | ✍️ Redacción |
-| [**MCP Builder**](./skills/mcp-builder/) | Guía para construir servidores MCP (Model Context Protocol) en Python y TypeScript. | 🛠️ Desarrollo |
-| [**OpenRouter**](./skills/openrouter/) | Integración unificada con la API de OpenRouter para usar más de 400 modelos de IA. | 🔌 API |
-| [**Process Interviewer**](./skills/process-interviewer/) | Entrevistador experto que extrae planes concretos de la mente del usuario antes de crear. | 📝 Planificación |
-| [**Prompt Master**](./skills/prompt-master/) | Genera prompts ultra-optimizados para cualquier herramienta o modelo de IA. | 💬 Prompts |
+**Meer officiële informatie:**
+- [Wat zijn skills? Spaanse gids](https://aimafia.substack.com/p/skills-ia)
+- [Officiële Claude skills documentatie](https://support.claude.com/en/articles/12512176-what-are-skills)
+- [Skills gebruiken in Claude](https://support.claude.com/en/articles/12512180-using-skills-in-claude)
+- [Aangepaste skills maken](https://support.claude.com/en/articles/12512198-creating-custom-skills)
 
 ---
 
-## 🚀 Cómo Usar las Skills
+## 📋 Skills Index
 
-### En Claude.ai
+| Skill | Beschrijving | Categorie |
+|-------|--------------|-----------|
+| [**Gestor Autónomos**](./skills/gestor-autonomos/) | Boekhoudkundig en fiscaal beheer voor zzp'ers in Spanje. Berekening van BTW, inkomstenbelasting (IRPF), Stripe/Substack verwerking. | 💼 Financiën |
+| [**Landing Page Mastery**](./skills/landing-page-mastery/) | Expertsysteem voor het maken en optimaliseren van high-converting landingspagina's (SaaS, cursussen, ebooks). | 🎨 Marketing |
+| [**Vercel React Best Practices**](./skills/vercel-react-best-practices/) | Prestatie-optimalisatiegidsen voor React en Next.js onderhouden door Vercel. (Gesynchroniseerde externe skill) | ⚡ Ontwikkeling |
+| [**Frontend Design**](./skills/frontend-design/) | Creëert onderscheidende, productieklare frontend-interfaces met een hoge ontwerpkwaliteit. (Skill van Anthropic) | 🎨 Ontwerp |
+| [**Frontier Plan OpenCode Executor**](./skills/frontier-plan-opencode-executor/) | Voert implementatieplannen van frontier AI veilig en gestructureerd uit. *(Gesynchroniseerde externe skill)* | 🤖 Agenten |
+| [**Agent Browser**](./skills/agent-browser/) | Browserautomatisering voor interactie met websites, gegevensextractie en testen. | 🌐 Web |
+| [**Audio Transcriber**](./skills/audio-transcriber/) | Zet audio-opnames om in Markdown-documentatie met samenvattingen. *(Bron: community)* | 🎙️ Audio |
+| [**Decision Toolkit**](./skills/decision-toolkit/) | Hulpmiddelen voor besluitvorming, stapsgewijze gidsen en scenarioverkenning. | 🧠 Productiviteit |
+| [**Deep Research**](./skills/deep-research/) | Diepgaand onderzoek naar elk onderwerp met zoekopdrachten op het web en uitgebreide analyse. | 🔍 Onderzoek |
+| [**Fact Checker**](./skills/fact-checker/) | Verifieert gegevens, feiten en beweringen om de nauwkeurigheid van de informatie te garanderen. | ✅ Verificatie |
+| [**File Organizer**](./skills/file-organizer/) | Organiseert bestanden, verwijdert duplicaten en stelt betere mappenstructuren voor. | 📁 Hulpprogramma's |
+| [**Find Skills**](./skills/find-skills/) | Ontdekt en installeert nieuwe agent skills in antwoord op gebruikersbehoeften. | ⚙️ Hulpprogramma's |
+| [**Frontend Slides**](./skills/frontend-slides/) | Maakt geanimeerde HTML-presentaties of converteert PowerPoint-bestanden. *(Bron: ECC)* | 📊 Presentaties |
+| [**Humanizer**](./skills/humanizer/) | Transformeert en humaniseert de toon van door AI gegenereerde teksten zodat ze natuurlijk klinken. | ✍️ Copywriting |
+| [**MCP Builder**](./skills/mcp-builder/) | Gids voor het bouwen van MCP (Model Context Protocol) servers in Python en TypeScript. | 🛠️ Ontwikkeling |
+| [**OpenRouter**](./skills/openrouter/) | Uniforme integratie met de OpenRouter API om meer dan 400 AI-modellen te gebruiken. | 🔌 API |
+| [**Process Interviewer**](./skills/process-interviewer/) | Deskundige interviewer die concrete plannen uit het hoofd van de gebruiker haalt voordat deze gaat bouwen. | 📝 Planning |
+| [**Prompt Master**](./skills/prompt-master/) | Genereert ultra-geoptimaliseerde prompts voor elke AI-tool of -model. | 💬 Prompts |
 
-1. Ve a **Configuración** → **Skills**
-2. Haz clic en **"Añadir skill"**
-3. Puedes:
-   - **Subir manualmente**: Descarga la carpeta de la skill y súbela
-   - **Desde URL**: Usa la URL del archivo `SKILL.md` en GitHub
+---
 
-### En Claude Code
+## 🚀 Hoe de Skills te gebruiken
+
+### In Claude.ai
+
+1. Ga naar **Settings** → **Skills**
+2. Klik op **"Add skill"**
+3. Je kunt:
+   - **Handmatig uploaden**: Download de skill-map en upload deze
+   - **Via URL**: Gebruik de URL van het `SKILL.md` bestand op GitHub
+
+### In Claude Code
 
 ```bash
-# Clona el repositorio
+# Kloon de repository
 git clone https://github.com/alexdcd/Mafia-Claude-Skills.git
 
-# Añade la skill a tu proyecto
+# Voeg de skill toe aan je project
 claude skill add ./Mafia-Claude-Skills/skills/gestor-autonomos
 ```
 
-### Vía API de Claude
+### Via Claude API
 
-Incluye el contenido de la skill en el system prompt o como contexto adicional en tu llamada a la API.
+Neem de inhoud van de skill op in de system prompt of als extra context in je API-aanroep.
 
 ---
 
-## 📂 Estructura del Repositorio
+## 📂 Repository Structuur
 
 ```
 Mafia-Claude-Skills/
-├── .github/                   # Plantillas de Issues y Pull Requests
-├── skills/                    # Carpeta principal que contiene todas las skills
-│   ├── nombre-de-la-skill/    # Carpeta individual para cada skill
-│   │   ├── SKILL.md           # Archivo obligatorio con instrucciones (YAML + Markdown)
-│   │   ├── scripts/           # (Opcional) Scripts de apoyo (Python, etc.)
-│   │   └── references/        # (Opcional) Documentación de referencia
-├── README.md                  # Documentación principal
-├── CONTRIBUTING.md            # Guía para colaboradores
-└── LICENSE                    # Licencia del proyecto
+├── .github/                   # Issue en Pull Request templates
+├── skills/                    # Hoofdmap die alle skills bevat
+│   ├── naam-van-de-skill/     # Individuele map voor elke skill
+│   │   ├── SKILL.md           # Verplicht bestand met instructies (YAML + Markdown)
+│   │   ├── scripts/           # (Optioneel) Ondersteunende scripts (Python, etc.)
+│   │   └── references/        # (Optioneel) Referentiedocumentatie
+├── README.md                  # Hoofddocumentatie
+├── CONTRIBUTING.md            # Gids voor bijdragers
+└── LICENSE                    # Projectlicentie
 ```
 
 ---
 
-## 🔧 Skills Disponibles
+## 🔧 Beschikbare Skills
 
-### 💼 Gestor Autónomos España
+### 💼 Gestor Autónomos España (Zzp'er Beheerder Spanje)
 
-> **Gestión contable y fiscal para trabajadores autónomos en España.**
+> **Boekhoudkundig en fiscaal beheer voor zzp'ers (autónomos) in Spanje.**
 
-Una skill completa para manejar la contabilidad y fiscalidad de autónomos con cálculos matemáticamente precisos.
+Een complete skill voor het beheren de boekhouding en belastingen van zzp'ers met wiskundig nauwkeurige berekeningen.
 
 > [!CAUTION]
-> **ADVERTENCIA**: Esta skill es una herramienta de apoyo y no sustituye el asesoramiento profesional. Los cálculos y sugerencias generados deben ser revisados por un gestor o profesional cualificado. El uso de esta herramienta se realiza bajo la responsabilidad exclusiva del usuario. Mafia Claude Skills y sus contribuidores no se hacen responsables de errores en las declaraciones fiscales o sanciones derivadas de su uso.
+> **WAARSCHUWING**: Deze skill is een hulpmiddel en is geen vervanging voor professioneel advies. De gegenereerde berekeningen en suggesties moeten worden gecontroleerd door een accountant of gekwalificeerde professional. Het gebruik van dit hulpmiddel is uitsluitend de verantwoordelijkheid van de gebruiker. Mafia Claude Skills en de bijdragers zijn niet verantwoordelijk voor fouten in belastingaangiften of boetes die voortvloeien uit het gebruik ervan.
 
-**Características:**
+**Kenmerken:**
 
-| Función | Descripción |
-|---------|-------------|
-| 📊 Modelo 303 (IVA) | Cálculo automático del IVA trimestral |
-| 📈 Modelo 130 (IRPF) | Cálculo del pago fraccionado de IRPF |
-| 🧾 Facturas | Procesamiento y validación de facturas |
-| 💳 Stripe/Substack | Procesamiento de ingresos digitales |
-| 📚 Libro contable | Generación del libro de ingresos/gastos |
-| 📖 Normativa | Referencia de legislación fiscal española |
+| Functie | Beschrijving |
+|---------|--------------|
+| 📊 Model 303 (BTW/IVA) | Automatische berekening van kwartaal-BTW |
+| 📈 Model 130 (IRPF) | Berekening van voorlopige inkomstenbelasting |
+| 🧾 Facturen | Verwerking en validatie van facturen |
+| 💳 Stripe/Substack | Verwerking van digitale inkomsten |
+| 📚 Boekhoudboek | Genereren van inkomsten/uitgavenboek |
+| 📖 Regelgeving | Referentie naar Spaanse belastingwetgeving |
 
-**Ejemplo de uso:**
+**Gebruiksvoorbeeld:**
 
 ```
-Usuario: Necesito calcular el IVA del 3T 2024. 
-         Facturé 12.000€ y tengo gastos deducibles por 3.500€.
+Gebruiker: Ik moet de BTW berekenen voor Q3 2024. 
+         Ik heb € 12.000 gefactureerd en heb € 3.500 aan aftrekbare kosten.
 
-Claude: [Usando Gestor Autónomos] Ejecutando cálculo...
+Claude: [Gebruikt Gestor Autónomos] Berekening uitvoeren...
 
-📊 MODELO 303 - 3T 2024
+📊 MODEL 303 - Q3 2024
 ━━━━━━━━━━━━━━━━━━━━━━
-Base imponible:     12.000,00 €
-IVA repercutido:     2.520,00 € (21%)
+Belastbare grondslag: 12.000,00 €
+Berekende BTW:         2.520,00 € (21%)
 
-Gastos deducibles:   3.500,00 €
-IVA soportado:         735,00 € (21%)
+Aftrekbare kosten:     3.500,00 €
+Voorbelasting BTW:       735,00 € (21%)
 
 ━━━━━━━━━━━━━━━━━━━━━━
-💰 IVA A INGRESAR:   1.785,00 €
+💰 BTW TE BETALEN:     1.785,00 €
 
-📅 Plazo: 1-20 Octubre 2024
+📅 Deadline: 1-20 Oktober 2024
 ```
 
-**Estructura de la skill:**
+**Skill structuur:**
 
 ```
 gestor-autonomos/
-├── SKILL.md           # Instrucciones y lógica fiscal
-├── scripts/           # Lógica de cálculo en Python
+├── SKILL.md           # Instructies en fiscale logica
+├── scripts/           # Berekeningslogica in Python
 │   ├── calcular_iva.py
 │   ├── calcular_irpf.py
 │   ├── procesar_facturas.py
 │   ├── procesar_stripe.py
 │   └── generar_libro.py
-└── references/        # Documentación de la AEAT
+└── references/        # Documentatie van de belastingdienst (AEAT)
     └── normativa_fiscal.md
 ```
 
-➡️ [Ver documentación completa](./skills/gestor-autonomos/SKILL.md)
+➡️ [Bekijk volledige documentatie](./skills/gestor-autonomos/SKILL.md)
 
 ---
 
 ### 🎨 Landing Page Mastery
 
-> **Sistema experto para crear y optimizar landing pages de alta conversión.**
+> **Expertsysteem voor het maken en optimaliseren van high-converting landingspagina's.**
 
-Una skill diseñada para marketers y fundadores que necesitan crear páginas de venta efectivas o mejorar las existentes basándose en datos y psicología del usuario.
+Een skill ontworpen voor marketeers en oprichters die effectieve verkooppagina's moeten maken of bestaande pagina's moeten verbeteren op basis van data en gebruikerspsychologie.
 
-**Características:**
+**Kenmerken:**
 
-| Función | Descripción |
-|---------|-------------|
-| 🏗️ Estructuras | Plantillas probadas para SaaS, Cursos, Ebooks y Newsletters |
-| ✍️ Copywriting | Generación de textos con frameworks (PAS, AIDA, STAR) |
-| 🔍 Auditoría | Checklist de 100 puntos para optimizar conversiones |
-| 🎨 Diseño | Guías de UX/UI, color y tipografía orientadas a conversión |
-| 📊 Benchmarks | Comparativa con métricas de mercado (2026) |
+| Functie | Beschrijving |
+|---------|--------------|
+| 🏗️ Structuren | Bewezen sjablonen voor SaaS, Cursussen, Ebooks en Nieuwsbrieven |
+| ✍️ Copywriting | Genereren van teksten met frameworks (PAS, AIDA, STAR) |
+| 🔍 Audit | 100-punten checklist om conversies te optimaliseren |
+| 🎨 Ontwerp | UX/UI, kleur- en typografiegidsen gericht op conversie |
+| 📊 Benchmarks | Vergelijking met marktstatistieken (2026) |
 
-**Casos de uso:**
-- Crear una landing page desde cero para un nuevo SaaS.
-- Auditar una página que no está convirtiendo bien.
-- Redactar los textos de venta.
+**Use cases:**
+- Een landingspagina vanaf nul maken voor een nieuwe SaaS.
+- Een pagina auditen die niet goed converteert.
+- Verkoopteksten schrijven.
 
-**Estructura de la skill:**
+**Skill structuur:**
 
 ```
 landing-page-mastery/
-├── SKILL.md           # Instrucciones y flujos de trabajo
-└── references/        # Base de conocimiento experta
-    ├── structures.md      # Estructuras por tipo de producto
-    ├── copywriting.md     # Fórmulas de redacción
-    ├── design.md          # Guías visuales
-    ├── audit-checklist.md # Auditoría paso a paso
-    └── conversion-elements.md # Elementos de conversión
+├── SKILL.md           # Instructies en workflows
+└── references/        # Expert kennisbank
+    ├── structures.md      # Structuren per producttype
+    ├── copywriting.md     # Copywriting formules
+    ├── design.md          # Visuele gidsen
+    ├── audit-checklist.md # Stapsgewijze audit
+    └── conversion-elements.md # Conversie-elementen
 ```
 
-➡️ [Ver documentación completa](./skills/landing-page-mastery/SKILL.md)
+➡️ [Bekijk volledige documentatie](./skills/landing-page-mastery/SKILL.md)
 
 ---
 
 ### 🎨 Frontend Design
 
-> **Crea interfaces frontend distintivas y de grado de producción con alta calidad de diseño.**
+> **Creëert onderscheidende, productieklare frontend-interfaces met een hoge ontwerpkwaliteit.**
 
-Una skill de Anthropic diseñada para guiar la creación de interfaces que eviten la estética genérica de la IA y apuesten por diseños audaces, memorables y refinados.
+Een skill van Anthropic ontworpen om de creatie van interfaces te sturen die generieke AI-esthetiek vermijden en kiezen voor gedurfde, gedenkwaardige en verfijnde ontwerpen.
 
-**Características:**
+**Kenmerken:**
 
-| Función | Descripción |
-|---------|-------------|
-| 🖋️ Tipografía | Selección de fuentes únicas y con carácter |
-| 🎨 Color y Temas | Paletas cohesivas y acentos definidos |
-| ✨ Animación | Micro-interacciones y movimientos de alto impacto |
-| 📐 Composición | Layouts inesperados y uso creativo del espacio |
-| 🌫️ Texturas | Fondos con profundidad y efectos visuales modernos |
+| Functie | Beschrijving |
+|---------|--------------|
+| 🖋️ Typografie | Selectie van unieke en karaktervolle lettertypen |
+| 🎨 Kleur en Thema's | Cohesieve paletten en gedefinieerde accenten |
+| ✨ Animatie | Micro-interacties en high-impact bewegingen |
+| 📐 Compositie | Onverwachte lay-outs en creatief gebruik van ruimte |
+| 🌫️ Texturen | Achtergronden met diepte en moderne visuele effecten |
 
-**Cuando usar esta skill:**
-- Al construir componentes web, landing pages o dashboards.
-- Para "embellecer" una interfaz existente.
-- Cuando buscas un diseño premium que no parezca generado por IA.
+**Wanneer deze skill te gebruiken:**
+- Bij het bouwen van webcomponenten, landingspagina's of dashboards.
+- Om een bestaande interface te "verfraaien".
+- Wanneer je op zoek bent naar een premium ontwerp dat niet door AI gegenereerd lijkt te zijn.
 
-**Estructura de la skill:**
+**Skill structuur:**
 
 ```
 frontend-design/
-├── SKILL.md           # Instrucciones y principios de diseño
-└── LICENSE.txt        # Licencia Apache 2.0
+├── SKILL.md           # Instructies en ontwerpprincipes
+└── LICENSE.txt        # Apache 2.0 Licentie
 ```
 
-➡️ [Ver documentación completa](./skills/frontend-design/SKILL.md)
+➡️ [Bekijk volledige documentatie](./skills/frontend-design/SKILL.md)
 
 ---
 
 ### 🤖 Frontier Plan OpenCode Executor
 
-> **Ejecuta planes de implementación de IA frontera de forma segura y estructurada en OpenCode.**
+> **Voert implementatieplannen van frontier AI veilig en gestructureerd uit in OpenCode.**
 
-Una skill externa sincronizada para validar y ejecutar paso a paso planes complejos de modelos como Claude Opus, forzando la verificación continua contra el repositorio real.
+Een gesynchroniseerde externe skill om complexe plannen van modellen zoals Claude Opus stapsgewijs te valideren en uit te voeren, waarbij continue verificatie tegen de daadwerkelijke repository wordt afgedwongen.
 
-**Características:**
+**Kenmerken:**
 
-| Función | Descripción |
-|---------|-------------|
-| 🔎 Validación | Verifica la realidad del repositorio antes de ejecutar |
-| 🛡️ Seguridad | Previene comandos destructivos e instalaciones no deseadas |
-| 🔄 Ejecución Paso a Paso | Fuerza al modelo a ejecutar de a un paso y verificar |
-| 👀 Inspección de Diffs | Revisa el tamaño y alcance real de cada cambio |
+| Functie | Beschrijving |
+|---------|--------------|
+| 🔎 Validatie | Controleert de status van de repository voor uitvoering |
+| 🛡️ Beveiliging | Voorkomt destructieve commando's en ongewenste installaties |
+| 🔄 Stapsgewijze Uitvoering | Dwingt het model om stap voor stap uit te voeren en te verifiëren |
+| 👀 Diffs Inspectie | Beoordeelt de werkelijke grootte en reikwijdte van elke wijziging |
 
-**Cuando usar esta skill:**
-- Al recibir un plan detallado de implementación de un modelo grande (ej. Claude Opus/GPT-5).
-- Para obligar a modelos más pequeños a ejecutar de manera disciplinada y segura.
+**Wanneer deze skill te gebruiken:**
+- Bij ontvangst van een gedetailleerd implementatieplan van een groot model (bijv. Claude Opus/GPT-5).
+- Om kleinere modellen te dwingen gedisciplineerd en veilig te werken.
 
-**Estructura de la skill:**
+**Skill structuur:**
 
 ```
 frontier-plan-opencode-executor/
-├── SKILL.md           # Flujo de trabajo, verificaciones e instrucciones
-└── README.md          # Documentación general de la skill
+├── SKILL.md           # Workflow, verificaties en instructies
+└── README.md          # Algemene documentatie van de skill
 ```
 
-➡️ [Ver documentación completa](./skills/frontier-plan-opencode-executor/SKILL.md)
+➡️ [Bekijk volledige documentatie](./skills/frontier-plan-opencode-executor/SKILL.md)
 
 ---
 
 ### 🌐 Agent Browser
-> **Automatización de navegador para interactuar con sitios web y extraer datos.**
+> **Browserautomatisering voor interactie met websites en gegevensextractie.**
 
-Interactúa con páginas web, rellena formularios, toma capturas de pantalla y realiza testing web de forma automatizada.
-➡️ [Ver documentación completa](./skills/agent-browser/SKILL.md)
+Communiceert met webpagina's, vult formulieren in, maakt screenshots en voert geautomatiseerd webtesten uit.
+➡️ [Bekijk volledige documentatie](./skills/agent-browser/SKILL.md)
 
 ---
 
 ### 🎙️ Audio Transcriber
-> **Transforma grabaciones en documentación Markdown profesional.** *(Source: community)*
+> **Zet opnames om in professionele Markdown-documentatie.** *(Bron: community)*
 
-Procesa audio para generar transcripciones estructuradas y resúmenes inteligentes mediante LLMs.
-➡️ [Ver documentación completa](./skills/audio-transcriber/SKILL.md)
+Verwerkt audio om gestructureerde transcripties en intelligente samenvattingen te genereren via LLM's.
+➡️ [Bekijk volledige documentatie](./skills/audio-transcriber/SKILL.md)
 
 ---
 
 ### 🧠 Decision Toolkit
-> **Herramientas estructuradas para la toma de decisiones.**
+> **Gestructureerde hulpmiddelen voor besluitvorming.**
 
-Genera guías paso a paso, detectores de sesgos y exploradores de escenarios para analizar opciones importantes de manera sistemática.
-➡️ [Ver documentación completa](./skills/decision-toolkit/SKILL.md)
+Genereert stapsgewijze gidsen, bias-detectoren en scenario-verkenningen om belangrijke opties systematisch te analyseren.
+➡️ [Bekijk volledige documentatie](./skills/decision-toolkit/SKILL.md)
 
 ---
 
 ### 🔍 Deep Research
-> **Investigación exhaustiva sobre cualquier temática usando la API de Deep Research.**
+> **Uitgebreid onderzoek naar elk onderwerp met behulp van de Deep Research API.**
 
-Automatiza la mejora de prompts de búsqueda y ejecuta análisis profundos con acceso web.
-➡️ [Ver documentación completa](./skills/deep-research/SKILL.md)
+Automatiseert de verbetering van zoekprompts en voert diepgaande analyses uit met webtoegang.
+➡️ [Bekijk volledige documentatie](./skills/deep-research/SKILL.md)
 
 ---
 
 ### ✅ Fact Checker
-> **Verificador de hechos y afirmaciones.**
+> **Verifieert feiten en beweringen.**
 
-Comprueba datos e información para asegurar su veracidad y precisión antes de su publicación o uso.
-➡️ [Ver documentación completa](./skills/fact-checker/SKILL.md)
+Controleert gegevens en informatie om hun waarheid en nauwkeurigheid te garanderen voorafgaand aan publicatie of gebruik.
+➡️ [Bekijk volledige documentatie](./skills/fact-checker/SKILL.md)
 
 ---
 
 ### 📁 File Organizer
-> **Organizador inteligente de archivos y directorios.**
+> **Slimme bestands- en directory-organisator.**
 
-Entiende el contexto de tus archivos, encuentra duplicados y sugiere estructuras ordenadas para tu espacio de trabajo digital.
-➡️ [Ver documentación completa](./skills/file-organizer/SKILL.md)
+Begrijpt de context van je bestanden, vindt duplicaten en stelt geordende structuren voor je digitale werkruimte voor.
+➡️ [Bekijk volledige documentatie](./skills/file-organizer/SKILL.md)
 
 ---
 
 ### ⚙️ Find Skills
-> **Descubrimiento e instalación de nuevas habilidades.**
+> **Ontdekken en installeren van nieuwe vaardigheden (skills).**
 
-Permite buscar e instalar skills dinámicamente cuando preguntas cómo hacer una tarea específica con agentes.
-➡️ [Ver documentación completa](./skills/find-skills/SKILL.md)
+Maakt het mogelijk om dynamisch skills te zoeken en te installeren wanneer je vraagt hoe je een specifieke taak met agenten moet uitvoeren.
+➡️ [Bekijk volledige documentatie](./skills/find-skills/SKILL.md)
 
 ---
 
 ### 📊 Frontend Slides
-> **Creación de presentaciones HTML ricas en animaciones.** *(Source: ECC)*
+> **Maken van animatie-rijke HTML presentaties.** *(Bron: ECC)*
 
-Construye diapositivas desde cero o convierte presentaciones de PowerPoint a web con facilidad.
-➡️ [Ver documentación completa](./skills/frontend-slides/SKILL.md)
+Bouwt dia's vanaf nul op of converteert PowerPoint-presentaties eenvoudig naar het web.
+➡️ [Bekijk volledige documentatie](./skills/frontend-slides/SKILL.md)
 
 ---
 
 ### ✍️ Humanizer
-> **Da un toque humano a tus textos.**
+> **Geef je teksten een menselijk tintje.**
 
-Ajusta y mejora el texto generado por IA para eliminar la "voz de robot" y hacerlo más cercano y natural.
-➡️ [Ver documentación completa](./skills/humanizer/SKILL.md)
+Past en verbetert door AI gegenereerde tekst aan om de "robotstem" te elimineren en het persoonlijker en natuurlijker te maken.
+➡️ [Bekijk volledige documentatie](./skills/humanizer/SKILL.md)
 
 ---
 
 ### 🛠️ MCP Builder
-> **Guía para crear servidores Model Context Protocol (MCP) de alta calidad.**
+> **Gids voor het maken van hoogwaardige Model Context Protocol (MCP) servers.**
 
-Ayuda en el desarrollo de herramientas MCP con Python (FastMCP) o TypeScript/Node para integrar APIs externas con LLMs.
-➡️ [Ver documentación completa](./skills/mcp-builder/SKILL.md)
+Helpt bij de ontwikkeling van MCP-tools met Python (FastMCP) of TypeScript/Node om externe API's te integreren met LLM's.
+➡️ [Bekijk volledige documentatie](./skills/mcp-builder/SKILL.md)
 
 ---
 
 ### 🔌 OpenRouter
-> **Acceso unificado a modelos de IA a través de OpenRouter.**
+> **Uniforme toegang tot AI-modellen via OpenRouter.**
 
-Interactúa con una enorme variedad de modelos (más de 400) integrando fácilmente la API de OpenRouter.
-➡️ [Ver documentación completa](./skills/openrouter/SKILL.md)
+Communiceer met een enorme verscheidenheid aan modellen (meer dan 400) door de OpenRouter API eenvoudig te integreren.
+➡️ [Bekijk volledige documentatie](./skills/openrouter/SKILL.md)
 
 ---
 
 ### 📝 Process Interviewer
-> **Entrevistador implacable para extraer y aterrizar planes.**
+> **Meedogenloze interviewer om plannen te extraheren en te concretiseren.**
 
-Antes de construir, este agente te entrevista para clarificar tus ideas, eliminar ambigüedades y generar un plan de acción robusto.
-➡️ [Ver documentación completa](./skills/process-interviewer/SKILL.md)
+Voordat je gaat bouwen, interviewt deze agent je om je ideeën te verduidelijken, dubbelzinnigheden weg te nemen en een robuust actieplan te genereren.
+➡️ [Bekijk volledige documentatie](./skills/process-interviewer/SKILL.md)
 
 ---
 
 ### 💬 Prompt Master
-> **Generador de prompts optimizados para cualquier herramienta de IA.**
+> **Geoptimaliseerde promptgenerator voor elke AI-tool.**
 
-Crea o adapta prompts perfectos para ChatGPT, Cursor, Midjourney, herramientas de vídeo y cualquier LLM o agente.
-➡️ [Ver documentación completa](./skills/prompt-master/SKILL.md)
+Maakt of past perfecte prompts aan voor ChatGPT, Cursor, Midjourney, videotools en elke LLM of agent.
+➡️ [Bekijk volledige documentatie](./skills/prompt-master/SKILL.md)
 
 ---
 
-## 🤝 Contribuir
+## 🤝 Bijdragen
 
-¡Las contribuciones son bienvenidas! Este es un proyecto open source y nos encantaría que compartieras tus propias skills.
+Bijdragen zijn welkom! Dit is een open source project en we zouden het leuk vinden als je je eigen skills deelt.
 
-### Formas de contribuir:
+### Manieren om bij te dragen:
 
-1. **🐛 Reportar bugs**: Abre un [issue](https://github.com/alexdcd/Mafia-Claude-Skills/issues) describiendo el problema
-2. **💡 Sugerir mejoras**: Propón nuevas funcionalidades o skills
-3. **🔧 Enviar Pull Requests**: Mejora skills existentes o añade nuevas
-4. **📝 Mejorar documentación**: Ayuda a que las instrucciones sean más claras
+1. **🐛 Bugs melden**: Open een [issue](https://github.com/alexdcd/Mafia-Claude-Skills/issues) waarin je het probleem beschrijft
+2. **💡 Verbeteringen voorstellen**: Stel nieuwe functies of skills voor
+3. **🔧 Pull Requests sturen**: Verbeter bestaande skills of voeg nieuwe toe
+4. **📝 Documentatie verbeteren**: Help om instructies duidelijker te maken
 
-### Cómo añadir una nueva skill:
+### Hoe voeg je een nieuwe skill toe:
 
 ```bash
-# 1. Fork y clona el repo
+# 1. Fork en kloon de repo
 git clone https://github.com/alexdcd/Mafia-Claude-Skills.git
 
-# 2. Crea una nueva carpeta para tu skill
-mkdir -p skills/mi-nueva-skill
+# 2. Maak een nieuwe map aan voor je skill
+mkdir -p skills/mijn-nieuwe-skill
 
-# 3. Añade los archivos requeridos
-touch skills/mi-nueva-skill/SKILL.md
+# 3. Voeg de vereiste bestanden toe
+touch skills/mijn-nieuwe-skill/SKILL.md
 
-# 4. Crea un PR
+# 4. Maak een PR aan
 ```
 
-Lee la [guía de contribución](CONTRIBUTING.md) para más detalles.
+Lees de [bijdragegids](CONTRIBUTING.md) voor meer details.
 
-### Cómo sincronizar skills externas:
+### Hoe externe skills te synchroniseren:
 
-Este repositorio incluye un sistema para sincronizar skills desde otros repositorios (como Vercel Best Practices).
+Deze repository bevat een systeem om skills uit andere repositories te synchroniseren (zoals Vercel Best Practices).
 
-1. **Configuración**: Las skills externas se definen en `data/external-skills.json`.
-2. **Sincronización**: Para actualizar o instalar estas skills, ejecuta:
+1. **Configuratie**: Externe skills worden gedefinieerd in `data/external-skills.json`.
+2. **Synchronisatie**: Om deze skills bij te werken of te installeren, voer je uit:
 
 ```bash
-# Requiere Python 3
+# Vereist Python 3
 python3 scripts/sync_skills.py
 ```
 
-Esto descargará la última versión de las skills definidas en el archivo JSON. Puedes usar este mecanismo para mantener tu repositorio actualizado con las mejores prácticas de la industria.
+Dit downloadt de nieuwste versie van de skills die in het JSON-bestand zijn gedefinieerd. Je kunt dit mechanisme gebruiken om je repository up-to-date te houden met best practices in de industrie.
 
 ---
 
-## 📏 Plantilla de Skill
+## 📏 Skill Sjabloon
 
-Usa esta plantilla para crear nuevas skills:
+Gebruik dit sjabloon om nieuwe skills te maken:
 
 ```markdown
 ---
-name: nombre-de-mi-skill
+name: naam-van-mijn-skill
 description: >
-  Descripción clara de qué hace esta skill y cuándo usarla.
-  Sé específico sobre los casos de uso.
+  Duidelijke beschrijving van wat deze skill doet en wanneer je deze moet gebruiken.
+  Wees specifiek over de use cases.
 ---
 
-# Nombre de Mi Skill
+# Naam van Mijn Skill
 
-Descripción detallada de la skill y sus capacidades.
+Gedetailleerde beschrijving van de skill en zijn mogelijkheden.
 
-## Cuándo usar esta skill
+## Wanneer deze skill te gebruiken
 
-- Caso de uso 1
-- Caso de uso 2
-- Caso de uso 3
+- Use case 1
+- Use case 2
+- Use case 3
 
-## Instrucciones
+## Instructies
 
-[Instrucciones detalladas para Claude sobre cómo ejecutar esta skill]
+[Gedetailleerde instructies voor Claude over hoe deze skill moet worden uitgevoerd]
 
-## Ejemplos
+## Voorbeelden
 
-[Ejemplos reales mostrando la skill en acción]
+[Echte voorbeelden die de skill in actie laten zien]
 ```
 
 ---
 
-## 📚 Recursos
+## 📚 Bronnen
 
-### Documentación oficial
+### Officiële documentatie
 - [Anthropic - Skills Repository](https://github.com/anthropics/skills)
-- [Centro de ayuda de Claude](https://support.claude.com)
-- [API de Claude](https://docs.anthropic.com)
+- [Claude Help Center](https://support.claude.com)
+- [Claude API](https://docs.anthropic.com)
 
-### Comunidad
+### Community
 - [La Mafia IA](https://aimafia.substack.com/)
 
 ---
 
-## 📄 Licencia
+## 📄 Licentie
 
-Este proyecto está licenciado bajo la [Licencia Apache 2.0](LICENSE).
+Dit project is gelicentieerd onder de [Apache 2.0 Licentie](LICENSE).
 
-Las skills incluidas son de uso libre para fines personales y comerciales, sujeto a los términos de la licencia.
+De inbegrepen skills zijn vrij te gebruiken voor persoonlijke en commerciële doeleinden, onderworpen aan de voorwaarden van de licentie.
 
 ---
 
-## ✨ Creado por
+## ✨ Gemaakt door
 
-**MAFIA IA** - Creando herramientas útiles para la comunidad hispanohablante de IA.
+**MAFIA IA** - Het creëren van nuttige tools voor de Spaanstalige (en nu ook Nederlandstalige) AI-gemeenschap.
 
 ---
 
 <div align="center">
 
-**¿Te ha sido útil?** ⭐ Dale una estrella al repositorio
+**Vond je het nuttig?** ⭐ Geef de repository een ster
 
-[Reportar Bug](https://github.com/alexdcd/Mafia-Claude-Skills/issues/new?template=bug-report.md) · [Sugerir Skill](https://github.com/alexdcd/Mafia-Claude-Skills/issues/new?template=nueva-skill.md) · [Contribuir](CONTRIBUTING.md)
+[Meld een Bug](https://github.com/alexdcd/Mafia-Claude-Skills/issues/new?template=bug-report.md) · [Stel een Skill voor](https://github.com/alexdcd/Mafia-Claude-Skills/issues/new?template=nueva-skill.md) · [Bijdragen](CONTRIBUTING.md)
 
 </div>

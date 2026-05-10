@@ -1,247 +1,247 @@
-# 🤝 Guía de Contribución
+# 🤝 Bijdragegids
 
-¡Gracias por tu interés en contribuir a Mafia Claude Skills! Este documento te guiará en cómo participar en el proyecto.
+Bedankt voor je interesse om bij te dragen aan Mafia Claude Skills! Dit document helpt je op weg met hoe je kunt deelnemen aan het project.
 
-## 📋 Tabla de Contenidos
+## 📋 Inhoudsopgave
 
-- [Código de Conducta](#código-de-conducta)
-- [Cómo Contribuir](#cómo-contribuir)
-- [Crear una Nueva Skill](#crear-una-nueva-skill)
-- [Estructura de una Skill](#estructura-de-una-skill)
-- [Buenas Prácticas](#buenas-prácticas)
+- [Gedragscode](#gedragscode)
+- [Hoe Bij te Dragen](#hoe-bij-te-dragen)
+- [Een Nieuwe Skill Maken](#een-nieuwe-skill-maken)
+- [Structuur van een Skill](#structuur-van-een-skill)
+- [Best Practices](#best-practices)
 - [Pull Requests](#pull-requests)
 
 ---
 
-## 📜 Código de Conducta
+## 📜 Gedragscode
 
-Este proyecto sigue un código de conducta basado en el respeto mutuo:
+Dit project volgt een gedragscode gebaseerd op wederzijds respect:
 
-- Sé respetuoso y constructivo
-- Acepta críticas de forma positiva
-- Enfócate en lo mejor para la comunidad
-- Usa un lenguaje inclusivo
-
----
-
-## 🛠️ Cómo Contribuir
-
-### Reportar Bugs
-
-1. Verifica que el bug no haya sido reportado previamente
-2. Abre un [Issue](https://github.com/alexdcd/Mafia-Claude-Skills/issues/new?template=bug-report.md)
-3. Incluye:
-   - Descripción clara del problema
-   - Pasos para reproducirlo
-   - Comportamiento esperado vs actual
-   - Capturas de pantalla si aplica
-
-### Sugerir Mejoras
-
-1. Abre un Issue con la etiqueta `enhancement`
-2. Describe la mejora propuesta
-3. Explica por qué sería útil
-
-### Contribuir Código
-
-1. Fork del repositorio
-2. Crea una rama para tu feature (`git checkout -b feature/nueva-skill`)
-3. Commit de tus cambios (`git commit -m 'Añadir nueva skill X'`)
-4. Push a la rama (`git push origin feature/nueva-skill`)
-5. Abre un Pull Request
+- Wees respectvol en constructief
+- Accepteer kritiek op een positieve manier
+- Richt je op wat het beste is voor de community
+- Gebruik inclusieve taal
 
 ---
 
-## ✨ Crear una Nueva Skill
+## 🛠️ Hoe Bij te Dragen
 
-### Paso 1: Crea la estructura
+### Bugs Melden
+
+1. Controleer of de bug niet al eerder is gemeld
+2. Open een [Issue](https://github.com/alexdcd/Mafia-Claude-Skills/issues/new?template=bug-report.md)
+3. Voeg het volgende toe:
+   - Duidelijke beschrijving van het probleem
+   - Stappen om het te reproduceren
+   - Verwacht vs huidig gedrag
+   - Screenshots indien van toepassing
+
+### Verbeteringen Voorstellen
+
+1. Open een Issue met het label `enhancement`
+2. Beschrijf de voorgestelde verbetering
+3. Leg uit waarom het nuttig zou zijn
+
+### Code Bijdragen
+
+1. Fork de repository
+2. Maak een branch voor je feature (`git checkout -b feature/nieuwe-skill`)
+3. Commit je wijzigingen (`git commit -m 'Voeg nieuwe skill X toe'`)
+4. Push naar de branch (`git push origin feature/nieuwe-skill`)
+5. Open een Pull Request
+
+---
+
+## ✨ Een Nieuwe Skill Maken
+
+### Stap 1: Maak de structuur
 
 ```bash
-mkdir -p skills/mi-skill-nombre
-touch skills/mi-skill-nombre/SKILL.md
+mkdir -p skills/mijn-skill-naam
+touch skills/mijn-skill-naam/SKILL.md
 ```
 
-### Paso 2: Completa el SKILL.md
+### Stap 2: Vul SKILL.md in
 
-Usa esta plantilla mínima:
+Gebruik deze minimale sjabloon:
 
 ```markdown
 ---
-name: mi-skill-nombre
+name: mijn-skill-naam
 description: >
-  Descripción clara y completa de qué hace esta skill.
-  Incluye cuándo se debe activar/usar.
+  Duidelijke en volledige beschrijving van wat deze skill doet.
+  Inclusief wanneer deze moet worden geactiveerd/gebruikt.
 ---
 
-# Nombre de la Skill
+# Naam van de Skill
 
-Descripción detallada.
+Gedetailleerde beschrijving.
 
-## Cuándo Usar Esta Skill
+## Wanneer Deze Skill Te Gebruiken
 
-- Caso de uso 1
-- Caso de uso 2
+- Use case 1
+- Use case 2
 
-## Instrucciones
+## Instructies
 
-[Instrucciones paso a paso para Claude]
+[Stapsgewijze instructies voor Claude]
 
-## Ejemplos
+## Voorbeelden
 
-[Ejemplos de uso real]
+[Voorbeelden van echt gebruik]
 ```
 
-### Paso 3: Añade recursos opcionales
+### Stap 3: Voeg optionele bronnen toe
 
 ```
-mi-skill-nombre/
-├── SKILL.md           # ✅ Requerido
-├── scripts/           # Opcional: scripts de ayuda
-├── templates/         # Opcional: plantillas
-└── references/        # Opcional: documentación de referencia
+mijn-skill-naam/
+├── SKILL.md           # ✅ Vereist
+├── scripts/           # Optioneel: hulpscripts
+├── templates/         # Optioneel: sjablonen
+└── references/        # Optioneel: referentiedocumentatie
 ```
 
-### Paso 4: Actualiza el README
+### Stap 4: Werk de README bij
 
-Añade tu skill a la tabla en el README principal.
+Voeg je skill toe aan de tabel in de hoofd README.
 
 ---
 
-## 📐 Estructura de una Skill
+## 📐 Structuur van een Skill
 
-### Archivo SKILL.md
+### SKILL.md Bestand
 
-El archivo `SKILL.md` es el corazón de cada skill. Contiene:
+Het `SKILL.md` bestand is het hart van elke skill. Het bevat:
 
-1. **Frontmatter YAML** (requerido):
+1. **YAML Frontmatter** (vereist):
    ```yaml
    ---
-   name: nombre-en-minusculas-con-guiones
+   name: naam-in-kleine-letters-met-streepjes
    description: >
-     Descripción completa en una o más líneas.
+     Volledige beschrijving op één of meerdere regels.
    ---
    ```
 
-2. **Contenido Markdown**:
-   - Título y descripción
-   - Cuándo usar la skill
-   - Instrucciones detalladas para Claude
-   - Ejemplos de uso
-   - Referencias adicionales
+2. **Markdown Inhoud**:
+   - Titel en beschrijving
+   - Wanneer de skill te gebruiken
+   - Gedetailleerde instructies voor Claude
+   - Gebruiksvoorbeelden
+   - Aanvullende referenties
 
 ### Scripts
 
-Si tu skill necesita cálculos precisos o procesamiento de datos:
+Als je skill nauwkeurige berekeningen of gegevensverwerking nodig heeft:
 
-- Usa **Python 3** para scripts
-- Incluye `#!/usr/bin/env python3` al inicio
-- Usa `argparse` para argumentos de CLI
-- Incluye docstrings y comentarios
-- Soporta salida en JSON (`--json`) para integración
+- Gebruik **Python 3** voor scripts
+- Zet `#!/usr/bin/env python3` bovenaan
+- Gebruik `argparse` voor CLI-argumenten
+- Voeg docstrings en opmerkingen toe
+- Ondersteun JSON-uitvoer (`--json`) voor integratie
 
-### Referencias
+### Referenties
 
-Para documentación de apoyo:
+Voor ondersteunende documentatie:
 
-- Usa **Markdown**
-- Incluye fuentes oficiales
-- Mantén la información actualizada
+- Gebruik **Markdown**
+- Neem officiële bronnen op
+- Houd de informatie up-to-date
 
 ---
 
-## ✅ Buenas Prácticas
+## ✅ Best Practices
 
-### Para el SKILL.md
+### Voor de SKILL.md
 
-| ✅ Hacer | ❌ Evitar |
-|----------|-----------|
-| Instrucciones claras y paso a paso | Instrucciones vagas |
-| Ejemplos concretos | Solo teoría |
-| Cobertura de casos edge | Asumir entrada perfecta |
-| Escribir para Claude, no usuarios finales | Mezclar audiencias |
-| Documentar dependencias | Asumir configuración previa |
+| ✅ Doen | ❌ Vermijden |
+|---------|--------------|
+| Duidelijke, stapsgewijze instructies | Vage instructies |
+| Concrete voorbeelden | Alleen theorie |
+| Edge cases afdekken | Uitgaan van perfecte invoer |
+| Schrijven voor Claude, niet voor eindgebruikers | Doelgroepen mixen |
+| Afhankelijkheden documenteren | Uitgaan van eerdere configuratie |
 
-### Para Scripts
+### Voor Scripts
 
 ```python
-# ✅ Bueno: Usa Decimal para dinero
+# ✅ Goed: Gebruik Decimal voor geld
 from decimal import Decimal
-precio = Decimal('19.99')
+prijs = Decimal('19.99')
 
-# ❌ Malo: Float para dinero
-precio = 19.99
+# ❌ Fout: Float voor geld
+prijs = 19.99
 ```
 
 ```python
-# ✅ Bueno: Manejo de errores
+# ✅ Goed: Foutafhandeling
 try:
-    resultado = procesar_datos(entrada)
+    resultaat = verwerk_gegevens(invoer)
 except ValueError as e:
-    print(f"Error: {e}", file=sys.stderr)
+    print(f"Fout: {e}", file=sys.stderr)
     sys.exit(1)
 
-# ❌ Malo: Sin manejo de errores
-resultado = procesar_datos(entrada)
+# ❌ Fout: Geen foutafhandeling
+resultaat = verwerk_gegevens(invoer)
 ```
 
-### Para Documentación
+### Voor Documentatie
 
-- Usa español claro y conciso
-- Incluye tablas para información estructurada
-- Usa emojis con moderación para mejorar legibilidad
-- Mantén las líneas cortas (< 100 caracteres)
+- Gebruik duidelijk en beknopt Nederlands
+- Voeg tabellen toe voor gestructureerde informatie
+- Gebruik emoji's met mate om de leesbaarheid te verbeteren
+- Houd regels kort (< 100 tekens)
 
 ---
 
 ## 🔄 Pull Requests
 
-### Antes de enviar
+### Voordat je indient
 
-- [ ] El código está probado y funciona
-- [ ] SKILL.md tiene frontmatter válido
-- [ ] Ejemplos son realistas y funcionan
-- [ ] README.md está actualizado (si añades skill)
-- [ ] No hay información sensible (tokens, contraseñas)
+- [ ] De code is getest en werkt
+- [ ] SKILL.md heeft een geldige frontmatter
+- [ ] Voorbeelden zijn realistisch en werken
+- [ ] README.md is bijgewerkt (als je een skill toevoegt)
+- [ ] Er is geen gevoelige informatie (tokens, wachtwoorden)
 
-### Proceso de revisión
+### Beoordelingsproces
 
-1. Un mantenedor revisará tu PR
-2. Puede haber comentarios o sugerencias
-3. Haz los cambios necesarios
-4. Una vez aprobado, se hará merge
+1. Een beheerder (maintainer) zal je PR beoordelen
+2. Er kunnen opmerkingen of suggesties zijn
+3. Breng de nodige wijzigingen aan
+4. Zodra het is goedgekeurd, wordt het gemerged
 
-### Convención de commits
+### Commit Conventie
 
 ```bash
-# Para nuevas skills
-git commit -m "feat(skill): añadir skill de gestión de facturas"
+# Voor nieuwe skills
+git commit -m "feat(skill): voeg factuurbeheerskill toe"
 
-# Para mejoras
-git commit -m "improve(gestor-autonomos): añadir soporte para modelo 390"
+# Voor verbeteringen
+git commit -m "improve(gestor-autonomos): voeg ondersteuning toe voor formulier 390"
 
-# Para bugs
-git commit -m "fix(scripts): corregir cálculo de redondeo en IVA"
+# Voor bugs
+git commit -m "fix(scripts): corrigeer afrondingsberekening in BTW"
 
-# Para documentación
-git commit -m "docs: actualizar guía de contribución"
+# Voor documentatie
+git commit -m "docs: werk bijdragegids bij"
 ```
 
 ---
 
-## ❓ Preguntas
+## ❓ Vragen
 
-Si tienes dudas:
+Als je twijfelt:
 
-1. Revisa los [Issues existentes](https://github.com/alexdcd/Mafia-Claude-Skills/issues)
-2. Abre un nuevo Issue con la etiqueta `question`
-3. Sé específico sobre tu pregunta
-
----
-
-## 🙏 Agradecimientos
-
-Gracias a todos los que contribuyen a hacer este proyecto mejor. Tu tiempo y esfuerzo son muy apreciados.
+1. Bekijk de [bestaande Issues](https://github.com/alexdcd/Mafia-Claude-Skills/issues)
+2. Open een nieuwe Issue met het label `question`
+3. Wees specifiek over je vraag
 
 ---
 
-*¿Primera vez contribuyendo a open source? ¡No te preocupes! Estamos aquí para ayudarte.*
+## 🙏 Dankwoord
+
+Bedankt aan iedereen die bijdraagt om dit project beter te maken. Jouw tijd en inzet worden zeer gewaardeerd.
+
+---
+
+*De eerste keer dat je bijdraagt aan open source? Maak je geen zorgen! We zijn hier om te helpen.*
